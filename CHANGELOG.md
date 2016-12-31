@@ -3,9 +3,11 @@ Upgraders: for a fresh start, consider running these commands
 * `git clean -xdf` 
 * `npm install`
 
-basedon_github = 'https://github.com/angular/quickstart/releases/tag/2.4.0';
-basedon_youtube = 'https://www.youtube.com/watch?v=-zW1zHqsdyc';
-basedon_jsonplaceholder = 'https://jsonplaceholder.typicode.com';
+<a name="Based on"></a>
+# Bsed on:
+* basedon_github = 'https://github.com/angular/quickstart/releases/tag/2.4.0';
+* basedon_youtube = 'https://www.youtube.com/watch?v=-zW1zHqsdyc';
+* basedon_jsonplaceholder = 'https://jsonplaceholder.typicode.com';
 
 <a name="1.2.0"></a>
 # 1.2.0 (2016-12-31)
