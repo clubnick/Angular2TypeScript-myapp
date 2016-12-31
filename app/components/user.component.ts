@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PostsService } from '../services/posts.service';
 
 // declaration
 @Component({
@@ -25,7 +26,7 @@ import { Component } from '@angular/core';
 
   <!--(click)-->
   <br />
-  <button (click)="toggleHobbies()"> {{showHobbies ? "Hide hobbies" : "Show hobbies"}} </button>
+  <button (click)="toggleHobbies()"> {{showHobbies ? "Hide Hobbies" : "Show Hobbies"}} </button>
 
   <br/>
   <!--*ngIf-->
@@ -44,20 +45,36 @@ import { Component } from '@angular/core';
     </form>
   </div>
 
+  <!--(click)-->
+  <br />
+  <button (click)="togglePosts()"> {{showPosts ? "Hide Posts" : "Show Posts"}} </button>
+
+  <!--{{posts}} observables -->
+  <hr/>
+  <div *ngIf = "showPosts">
+    <h3>Posts observables from service</h3>
+    <div *ngFor="let post of posts">
+        <h3> {{post.id}}.{{post.title}} </h3>
+        <p> {{post.body}} </p>
+    </div>
+  </div>
   `
     ,
+    providers: [PostsService]
 })
 
 export class UserComponent {
     name: string;
     username: string;
     useremail: string;
-    //address: any;
     address: i_address;
-    showHobbies: boolean;
     hobbies: string[];
+    showHobbies: boolean;
+    posts: i_Post[];
+    showPosts: boolean;
 
-    constructor() {
+    // injection of postsService
+    constructor(private postsService: PostsService) {
         this.name = 'UserComponent';
         this.username = 'Frodo';
         this.useremail = 'flubnick@gmail.com ';
@@ -66,25 +83,40 @@ export class UserComponent {
             city: 'Bratislava',
             state: 'Slovensko'
         }
-        this.showHobbies = false;
         this.hobbies = ['Music', 'Movies', 'Sports', 'Books'];
+        this.showHobbies = false;
+        this.posts = [];
+        this.showPosts = false;
 
-        console.log('constructor ran: ' + this.name)
+        // run injected method and subscribe observables results objects resturned from the servis
+        // (into console and) into list property
+        this.postsService.getPosts().subscribe(posts => {
+            //console.log(posts);
+            this.posts = posts;
+            console.log('returned posts count: ' + this.posts.length);
+        });
+
+        console.log('constructor ran: ' + this.name +' length: ' +this.posts.length);
     }
 
     toggleHobbies() {
         this.showHobbies = !this.showHobbies;
         console.log("toggleHobbies ran: " + this.showHobbies);
     }
-    
+
     addHobby(hobby: string) {
         this.hobbies.push(hobby);
         console.log("addHoby ran: " + hobby);
     }
 
-     deleteHobby(i: number) {
+    deleteHobby(i: number) {
         this.hobbies.splice(i, 1);
-        console.log("deleteHoby ran: " + this.hobbies[i]);
+        console.log("deleteHobby ran: " + this.hobbies[i]);
+    }
+
+    togglePosts() {
+        this.showPosts = !this.showPosts;
+        console.log("togglePosts ran: " + this.showPosts);
     }
 }
 
@@ -92,4 +124,10 @@ interface i_address {
     street: string;
     city: string;
     state: string;
+}
+
+interface i_Post {
+    id: number;
+    title: string;
+    body: string;
 }

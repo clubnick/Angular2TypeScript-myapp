@@ -3,6 +3,17 @@ Upgraders: for a fresh start, consider running these commands
 * `git clean -xdf` 
 * `npm install`
 
+basedon_github = 'https://github.com/angular/quickstart/releases/tag/2.4.0';
+basedon_youtube = 'https://www.youtube.com/watch?v=-zW1zHqsdyc';
+basedon_jsonplaceholder = 'https://jsonplaceholder.typicode.com';
+
+<a name="1.2.0"></a>
+# 1.2.0 (2016-12-31)
+* add JSON PlaceHolder - youtube source 39 min - JSON PlaceHolder, https://jsonplaceholder.typicode.com
+* add http module to app.modules
+* add services - posts.service
+* add button to show/hide posts observables returned from services
+
 <a name="1.1.0"></a>
 # 1.1.0 (2016-12-30)
 * some small changes in app.components
