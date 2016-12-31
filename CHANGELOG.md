@@ -3,6 +3,17 @@ Upgraders: for a fresh start, consider running these commands
 * `git clean -xdf` 
 * `npm install`
 
+<a name="1.1.0"></a>
+# 1.1.0 (2016-12-30)
+* some small changes in app.components
+* add user.components, forms, inputs, buttons, bindings
+
+<a name="1.0.0"></a>
+# 1.0.0 (2016-12-30)
+* Initial project taken from https://github.com/angular/quickstart
+
+<a name="=.=.="></a>
+
 <a name="0.2.21"></a>
 # 0.2.20 (2016-12-14)
 * Update to in-memory-web-api v.0.2.1
