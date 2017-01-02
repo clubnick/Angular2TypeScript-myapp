@@ -5,28 +5,26 @@ import { Component } from '@angular/core';
   selector: 'my-app',
   template: `
   <h3> component: {{name}} </h3>
-  <h2> Angular 2 QuickStart - myapp </h2>
-  <h4> (Angular 2, TypeScript-*ngFor *ngIf (click) (submit) ngModel binding Services-JsonPlaceHolder</h4>
+  <h2> Angular2TypeScript-myapp </h2>
+  <div> https://github.com/clubnick/Angular2TypeScript-myapp, v1.3.0</div>
+
+  <br/><hr/>
+    <!--<user></user>-->
+    <ul>
+      <li><a routerLink="/"> Home (user) </a></li>
+      <li><a routerLink="/user"> User </a></li>
+      <li><a routerLink="/about"> About </a></li>
+    </ul>
+  <br/><hr/>
+  <router-outlet></router-outlet>
   
-
-  <p><strong> based on </strong></p>
-  <li> Youtube: {{basedon_youtube}} </li>
-  <li> GitHub: {{basedon_github}}  </li>
-  <li> JsonPlaceHolder: {{basedon_jsonplaceholder}}  </li>
-
-  <br/><hr/>
-  <user></user>
-  <br/><hr/>
   `
   ,
 })
 
 export class AppComponent  { 
   name = 'AppComponent';
-  basedon_github = 'https://github.com/angular/quickstart/releases/tag/2.4.0';
-  basedon_youtube = 'https://www.youtube.com/watch?v=-zW1zHqsdyc';
-  basedon_jsonplaceholder = 'https://jsonplaceholder.typicode.com';
-
+  
   constructor(){
       console.log('constructor ran: ' + this.name);
   }

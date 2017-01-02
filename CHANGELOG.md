@@ -9,6 +9,13 @@ Upgraders: for a fresh start, consider running these commands
 * basedon_youtube = 'https://www.youtube.com/watch?v=-zW1zHqsdyc';
 * basedon_jsonplaceholder = 'https://jsonplaceholder.typicode.com';
 
+<a name="1.3.0"></a>
+# 1.3.0 (2017-01-02)
+* <h3> head for Posts
+* move http template - to user.component.html
+* add routing (reditrect of URL links)
+* improved design
+
 <a name="1.2.0"></a>
 # 1.2.0 (2016-12-31)
 * add JSON PlaceHolder - youtube source 39 min - JSON PlaceHolder, https://jsonplaceholder.typicode.com

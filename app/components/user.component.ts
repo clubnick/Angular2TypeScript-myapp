@@ -1,65 +1,13 @@
 import { Component } from '@angular/core';
 import { PostsService } from '../services/posts.service';
 
-// declaration
 @Component({
-    selector: 'user',
-    template: `
-  <h3> component: {{name}} </h3>
-  <p><strong> Idname: <span class="green"> {{username}} </span></strong></p>
-  <div><strong> Email: <span class="green"> {{useremail}} </span></strong></div>
-  <p><strong> Adressa: <span class="green"> {{address.street}}, {{address.city}}, {{address.state}} </span></strong></p>
-
-  <h3>Edit User</h3>
-  <form>
-    <label> UserName: </label>
-    <input type="text" name="username" [(ngModel)]="username"/><br/>
-    <label> UserEmail: </label>
-    <input type="text" name="useremail" [(ngModel)]="useremail"/><br/>
-    <label> Street: </label>
-    <input type="text" name="address.street" [(ngModel)]="address.street"/><br/>
-    <label> City: </label>
-    <input type="text" name="address.city" [(ngModel)]="address.city"/><br/>
-    <label> State: </label>
-    <input type="text" name="address.state" [(ngModel)]="address.state"/><br/>
-  </form>
-
-  <!--(click)-->
-  <br />
-  <button (click)="toggleHobbies()"> {{showHobbies ? "Hide Hobbies" : "Show Hobbies"}} </button>
-
-  <br/>
-  <!--*ngIf-->
-  <div *ngIf = "showHobbies">
-    <h4> Hobbies (showhobbies is true) </h4>
-    <!--{{hobbies}}-->
-    <ul>
-        <!--*ngFor-->
-        <li *ngFor="let hobby of hobbies; let i = index">
-            <button title="delete" (click)="deleteHobby(i)"> X </button> {{hobby}}
-        </li>
-    </ul>
-    <form (submit)="addHobby(hobby.value)">
-        <label> Add Hobby: </label>
-        <input type="text" #hobby /> Press Enter to add...<br/>
-    </form>
-  </div>
-
-  <!--(click)-->
-  <br />
-  <button (click)="togglePosts()"> {{showPosts ? "Hide Posts" : "Show Posts"}} </button>
-
-  <!--{{posts}} observables -->
-  <hr/>
-  <div *ngIf = "showPosts">
-    <h3>Posts observables from service</h3>
-    <div *ngFor="let post of posts">
-        <h3> {{post.id}}.{{post.title}} </h3>
-        <p> {{post.body}} </p>
-    </div>
-  </div>
-  `
-    ,
+    moduleId: module.id, // mandatory if templateUrl used
+//    selector: 'user',
+//     template: `
+//     <p> here can be some html code </p
+//   `
+    templateUrl: 'user.component.html',
     providers: [PostsService]
 })
 
@@ -88,7 +36,7 @@ export class UserComponent {
         this.posts = [];
         this.showPosts = false;
 
-        // run injected method and subscribe observables results objects resturned from the servis
+        // run injected method and subscribe observables results objects resturned from the service
         // (into console and) into list property
         this.postsService.getPosts().subscribe(posts => {
             //console.log(posts);
