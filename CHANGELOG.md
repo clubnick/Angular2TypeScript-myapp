@@ -12,6 +12,11 @@ Upgraders: for a fresh start, consider running these commands
 <a name="TO DO"></a>
 # display package.json version on the html about page
 
+<a name="1.5.0"></a>
+# 1.5.0 (2017-01-02)
+* add some new possibilities to html code as comments
+* add commentsService and display comment in the About Page
+
 <a name="1.4.0"></a>
 # 1.4.0 (2017-01-02)
 * upd this changelog

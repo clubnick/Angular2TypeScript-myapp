@@ -7,6 +7,9 @@
 <form>
     <label> UserName: </label>
     <input type="text" name="username" [(ngModel)]="username" /><br/>
+    <!-- or without name attribute
+    <input  [(ngModel)]="username" [ngModelOptions]="{standalone: true}"/><br/>
+    -->
     <label> UserEmail: </label>
     <input type="text" name="useremail" [(ngModel)]="useremail" /><br/>
     <label> Street: </label>

@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
   template: `
   <h3> component: {{name}} </h3>
   <h2> Angular2TypeScript-myapp </h2>
-  <div> https://github.com/clubnick/Angular2TypeScript-myapp, v1.3.0</div>
+  <div> https://github.com/clubnick/Angular2TypeScript-myapp</div>
+  <div> see About link for more info</div>
 
   <br/><hr/>
     <!--<user></user>-->
