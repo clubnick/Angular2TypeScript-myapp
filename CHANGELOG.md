@@ -4,14 +4,21 @@ Upgraders: for a fresh start, consider running these commands
 * `npm install`
 
 <a name="Based on"></a>
-# Bsed on:
+# Based on:
 * basedon_github = 'https://github.com/angular/quickstart/releases/tag/2.4.0';
 * basedon_youtube = 'https://www.youtube.com/watch?v=-zW1zHqsdyc';
 * basedon_jsonplaceholder = 'https://jsonplaceholder.typicode.com';
 
+<a name="TO DO"></a>
+# display package.json version on the html about page
+
+<a name="1.4.0"></a>
+# 1.4.0 (2017-01-02)
+* upd this changelog
+
 <a name="1.3.0"></a>
 # 1.3.0 (2017-01-02)
-* <h3> head for Posts
+* head for Posts
 * move http template - to user.component.html
 * add routing (reditrect of URL links)
 * improved design
