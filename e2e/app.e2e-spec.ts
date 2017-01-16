@@ -2,14 +2,19 @@ import { browser, element, by } from 'protractor';
 
 describe('QuickStart E2E Tests', function () {
 
-  let expectedMsg = 'Hello Angular';
+  let expectedMsgH1 = 'Hello Angular';
+  let expectedMsgH2 = 'Angular2TypeScript-myapp';
 
   beforeEach(function () {
     browser.get('');
   });
 
-  it('should display: ' + expectedMsg, function () {
-    expect(element(by.css('h1')).getText()).toEqual(expectedMsg);
+  it('should display: ' + expectedMsgH1, function () {
+    expect(element(by.css('h1')).getText()).toEqual(expectedMsgH1);
+  });
+
+  it('should display: ' + expectedMsgH2, function () {
+    expect(element(by.css('h2')).getText()).toEqual(expectedMsgH2);
   });
 
 });

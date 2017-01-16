@@ -10,8 +10,13 @@ Upgraders: for a fresh start, consider running these commands
 * basedon_jsonplaceholder = 'https://jsonplaceholder.typicode.com';
 
 <a name="TO DO"></a>
-* add / repare tests
+* add / repare karma tests
 * display package.json version on the html about page
+
+<a name="1.7.0"></a>
+# 1.7.0 (2017-01-16)
+* add / repared e2e protractor tests
+* testing h1, h2 content
 
 <a name="1.6.0"></a>
 # 1.6.0 (2017-01-16)

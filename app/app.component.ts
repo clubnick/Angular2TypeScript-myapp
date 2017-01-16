@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'my-app',
   template: `
+  <h1>Hello Angular</h1>
   <h3> component: {{name}} </h3>
   <h2> Angular2TypeScript-myapp </h2>
   <div> https://github.com/clubnick/Angular2TypeScript-myapp</div>
