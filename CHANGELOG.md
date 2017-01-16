@@ -10,7 +10,13 @@ Upgraders: for a fresh start, consider running these commands
 * basedon_jsonplaceholder = 'https://jsonplaceholder.typicode.com';
 
 <a name="TO DO"></a>
-# display package.json version on the html about page
+* add / repare tests
+* display package.json version on the html about page
+
+<a name="1.6.0"></a>
+# 1.6.0 (2017-01-16)
+* upd index.html ... add please wait
+
 
 <a name="1.5.0"></a>
 # 1.5.0 (2017-01-02)

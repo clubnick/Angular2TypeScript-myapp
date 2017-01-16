@@ -1,6 +1,6 @@
 {
   "name": "angular2typescript-myapp",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "Angular2-TypeScript-QuickStart-myapp ",
   "scripts": {
     "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
