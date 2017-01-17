@@ -19,6 +19,11 @@ Upgraders: for a fresh start, consider running these commands
 * implement CI
 
 
+<a name="2.0.0"></a>
+# 2.0.0 (2017-01-17)
+* add jasmine locator by.xpath for test
+
+
 <a name="1.9.0"></a>
 # 1.9.0 (2017-01-17)
 * resharping code according tslint

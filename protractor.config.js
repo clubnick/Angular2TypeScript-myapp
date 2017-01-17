@@ -79,7 +79,7 @@ function Reporter(options) {
     _currentSuite = { description: suite.description, status: null, specs: [] };
     _root.suites.push(_currentSuite);
     log('Suite: ' + suite.description, +1);
-    log('----------------------------', -1);
+    log('------------------------------------------------', -1);
   };
 
   this.suiteDone = function(suite) {
@@ -90,7 +90,8 @@ function Reporter(options) {
     var status = statuses.indexOf('failed') >= 0 ? 'failed' : statuses.join(', ');
     _currentSuite.status = status;
     log('Suite ' + _currentSuite.status + ': ' + suite.description, +1);
-    log('--------------------------------', -1);
+    log('----------------------------------------------------', -1);
+    log('', 0);
   };
 
   this.specStarted = function(spec) {
@@ -151,7 +152,7 @@ function Reporter(options) {
     results.push('AppDir:' + output.appDir);
     output.suites.forEach(function(suite) {
       results.push(pad + 'Suite: ' + suite.description + ' -- ' + suite.status);
-      results.push(pad + '----------------------------------------------------');
+      results.push(pad + '------------------------------------------------------------------------');
       pad+=indent;
       suite.specs.forEach(function(spec) {
         results.push(pad + spec.status + ' - ' + spec.description);
@@ -164,11 +165,11 @@ function Reporter(options) {
         }
       });
       pad = pad.substr(2);
-      //results.push('');
+      results.push('');
     });
-    results.push(pad + '----------------------------------------------------');
+    results.push(pad + '------------------------------------------------------------------------');
+    results.push('\n');
     results.push('');
-
     return results.join('\n');
   }
 
