@@ -12,6 +12,7 @@ Upgraders: for a fresh start, consider running these commands
 * basedon_jsonplaceholder = 'https://jsonplaceholder.typicode.com';
 
 <a name="TO DO"></a>
+# TO DO
 * add / repair karma tests
 * add bs-config to control browser port and file location
 * display package.json version on the html about page
