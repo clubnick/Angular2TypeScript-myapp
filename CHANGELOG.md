@@ -24,12 +24,15 @@ Upgraders: for a fresh start, consider running these commands
 * implement deploy (webpack)
 * implement CI
 
+<a name="2.3.1"></a>
+# 2.3.1 (2017-01-17)
+* app.component.ts, add import { Router } from '@angular/router';
+
 <a name="2.3.0"></a>
 # 2.3.0 (2017-01-17)
 * starting with repair karma tests
   app.components.spec.ts, test true is true
   zonejs@0.7.4 needed (not zonejs@0.7.5) ...https://github.com/angular/angular-cli/issues/3975
-
 
 <a name="2.2.0"></a>
 # 2.2.0 (2017-01-17)
