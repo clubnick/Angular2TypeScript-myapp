@@ -11,7 +11,19 @@ Upgraders: for a fresh start, consider running these commands
 
 <a name="TO DO"></a>
 * add / repare karma tests
+* resharping *.ts to dist/*.js and dist/*.map
+* add bs-config to control browser port and file location
 * display package.json version on the html about page
+* implement build ( gulp)
+* implement deploy (webpack)
+* implement CI
+
+<a name="1.8.0"></a>
+# 1.8.0 (2017-01-17)
+* modify protractor.config.js:<br/>
+  add one row to log console output   
+  add one row to protractor output file  - ./_test-output', 'protractor-results.txt  
+
 
 <a name="1.7.0"></a>
 # 1.7.0 (2017-01-16)
