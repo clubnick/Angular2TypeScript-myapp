@@ -2,6 +2,8 @@
 Upgraders: for a fresh start, consider running these commands 
 * `git clean -xdf` 
 * `npm install`
+* `npm start`
+* `npm run copy2dist` - copy *.html and *.css files into dist dir
 
 <a name="Based on"></a>
 # Based on:
@@ -10,41 +12,41 @@ Upgraders: for a fresh start, consider running these commands
 * basedon_jsonplaceholder = 'https://jsonplaceholder.typicode.com';
 
 <a name="TO DO"></a>
-* add / repare karma tests
-* resharping *.ts to dist/*.js and dist/*.map
+* add / repair karma tests
 * add bs-config to control browser port and file location
 * display package.json version on the html about page
 * implement build ( gulp)
 * implement deploy (webpack)
 * implement CI
 
-<a name="DOING...NOT WORK YET"></a>
-* tsconfig.json, added outDir, comment // <--- added
-* systemjs.config.js,  app: 'dist', // <--- added
-* index.html, add //System.import('dist/app').catch(function(err){ console.error(err); });
-
+<a name="2.2.0"></a>
+# 2.2.0 (2017-01-17)
+* resharping - add "dist" directory for transpiled files *.js and *.map
+  tsconfig.json, added   "outDir": "dist", // <-- added  -->
+  systemjs.config.js,  app: 'dist', // <-- added  -->
+* copy app html and css files into dist dir
+  install package npm i copyfiles -D  
+  install package npm i copyfiles -g  
+  package.json: script ... add copy2dist  
+  index.html, add //System.import('dist/app').catch(function(err){ console.error(err); });  
 
 <a name="2.0.1"></a>
 # 2.0.1 (2017-01-17)
 * package.json, add ./e2e/**/*.ts for   tslint
 
-
 <a name="2.0.0"></a>
 # 2.0.0 (2017-01-17)
 * add jasmine locator by.xpath for test
 
-
 <a name="1.9.0"></a>
 # 1.9.0 (2017-01-17)
 * resharping code according tslint
-
 
 <a name="1.8.0"></a>
 # 1.8.0 (2017-01-17)
 * modify protractor.config.js:<br/>
   add underline rows to log console output   
   add underline rows to protractor output file  - ./_test-output', 'protractor-results.txt  
-
 
 <a name="1.7.0"></a>
 # 1.7.0 (2017-01-16)
@@ -54,7 +56,6 @@ Upgraders: for a fresh start, consider running these commands
 <a name="1.6.0"></a>
 # 1.6.0 (2017-01-16)
 * upd index.html ... add please wait
-
 
 <a name="1.5.0"></a>
 # 1.5.0 (2017-01-02)
