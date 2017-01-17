@@ -5,7 +5,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class PostsService {
     constructor(private http: Http) {
-        console.log('PostService initialized...')
+        console.log('PostService initialized...');
     }
 
     // service get from URL

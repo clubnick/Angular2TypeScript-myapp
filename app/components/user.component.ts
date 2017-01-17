@@ -15,10 +15,10 @@ export class UserComponent {
     name: string;
     username: string;
     useremail: string;
-    address: i_address;
+    address: Iaddress;
     hobbies: string[];
     showHobbies: boolean;
-    posts: i_Post[];
+    posts: IPost[];
     showPosts: boolean;
 
     // injection of postsService
@@ -30,7 +30,7 @@ export class UserComponent {
             street: 'Hlavná 111',
             city: 'Bratislava',
             state: 'Slovensko'
-        }
+        };
         this.hobbies = ['Music', 'Movies', 'Sports', 'Books'];
         this.showHobbies = false;
         this.posts = [];
@@ -39,42 +39,42 @@ export class UserComponent {
         // run injected method and subscribe observables results objects resturned from the service
         // (into console and) into list property
         this.postsService.getPosts().subscribe(posts => {
-            //console.log(posts);
+            // console.log(posts);
             this.posts = posts;
             console.log('returned posts count: ' + this.posts.length);
         });
 
-        console.log('constructor ran: ' + this.name +' length: ' +this.posts.length);
+        console.log('constructor ran: ' + this.name + ' length: ' + this.posts.length);
     }
 
     toggleHobbies() {
         this.showHobbies = !this.showHobbies;
-        console.log("toggleHobbies ran: " + this.showHobbies);
+        console.log('toggleHobbies ran: ' + this.showHobbies);
     }
 
     addHobby(hobby: string) {
         this.hobbies.push(hobby);
-        console.log("addHoby ran: " + hobby);
+        console.log('addHoby ran: ' + hobby);
     }
 
     deleteHobby(i: number) {
         this.hobbies.splice(i, 1);
-        console.log("deleteHobby ran: " + this.hobbies[i]);
+        console.log('deleteHobby ran: ' + this.hobbies[i]);
     }
 
     togglePosts() {
         this.showPosts = !this.showPosts;
-        console.log("togglePosts ran: " + this.showPosts);
+        console.log('togglePosts ran: ' + this.showPosts);
     }
 }
 
-interface i_address {
+interface Iaddress {
     street: string;
     city: string;
     state: string;
 }
 
-interface i_Post {
+interface IPost {
     id: number;
     title: string;
     body: string;

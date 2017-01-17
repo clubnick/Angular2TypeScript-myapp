@@ -18,6 +18,12 @@ Upgraders: for a fresh start, consider running these commands
 * implement deploy (webpack)
 * implement CI
 
+
+<a name="1.9.0"></a>
+# 1.9.0 (2017-01-17)
+* resharping code according tslint
+
+
 <a name="1.8.0"></a>
 # 1.8.0 (2017-01-17)
 * modify protractor.config.js:<br/>

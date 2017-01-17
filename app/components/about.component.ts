@@ -32,13 +32,13 @@ import { CommentsService} from '../services/comments.service';
   providers: [CommentsService]
 })
 
-export class AboutComponent  { 
+export class AboutComponent  {
     name: string;
     basedon_github: string;
     basedon_youtube: string;
     basedon_jsonplaceholder: string;
-    comment1: string = "";
-    comment2: string = "";
+    comment1: string = '';
+    comment2: string = '';
 
     // injection of CommentsService
     constructor(private commentsService: CommentsService) {

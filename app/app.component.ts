@@ -24,10 +24,9 @@ import { Component } from '@angular/core';
   ,
 })
 
-export class AppComponent  { 
+export class AppComponent  {
   name = 'AppComponent';
-  
-  constructor(){
+  constructor() {
       console.log('constructor ran: ' + this.name);
   }
 }

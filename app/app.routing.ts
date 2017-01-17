@@ -6,15 +6,15 @@ import {AboutComponent} from './components/about.component';
 
 const appRoutes: Routes = [
     {
-        path:'',
+        path: '',
         component: UserComponent
     },
     {
-        path:'user',
+        path: 'user',
         component: UserComponent
     },
     {
-        path:'about',
+        path: 'about',
         component: AboutComponent
     }
 ];

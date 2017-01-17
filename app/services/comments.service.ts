@@ -1,11 +1,11 @@
-//import { Injectable } from '@angular/core'; // inject service as dependency
+// import { Injectable } from '@angular/core'; // inject service as dependency
 import 'rxjs/add/operator/map'; // identifies it as a service
 
 export class CommentsService {
     name = 'CommentService';
 
 
-    constructor(){
+    constructor() {
         console.log('constructor ran: ' + this.name);
     }
 
