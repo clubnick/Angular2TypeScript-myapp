@@ -21,8 +21,8 @@ Upgraders: for a fresh start, consider running these commands
 <a name="1.8.0"></a>
 # 1.8.0 (2017-01-17)
 * modify protractor.config.js:<br/>
-  add one row to log console output   
-  add one row to protractor output file  - ./_test-output', 'protractor-results.txt  
+  add underline rows to log console output   
+  add underline rows to protractor output file  - ./_test-output', 'protractor-results.txt  
 
 
 <a name="1.7.0"></a>
