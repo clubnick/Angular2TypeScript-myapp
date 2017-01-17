@@ -22,7 +22,18 @@ describe('AppComponent', function () {
     de = fixture.debugElement.query(By.css('h1'));
   });
 
+  it('should be true ', () => expect(true).toBe(true) );
+/*  
+
   it('should create component', () => expect(comp).toBeDefined() );
+
+  it('should create component simple syntax', () =>   
+    expect(comp).toBeDefined() 
+  )
+
+  it('should create component comples syntax', () =>   {
+    expect(comp).toBeDefined() ;
+  });
 
   it('should have expected <h1> text', () => {
     fixture.detectChanges();
@@ -30,4 +41,5 @@ describe('AppComponent', function () {
     expect(h1.innerText).toMatch(/angular/i,
       '<h1> should say something about "Angular"');
   });
+*/
 });

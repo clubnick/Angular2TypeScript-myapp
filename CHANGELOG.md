@@ -13,12 +13,23 @@ Upgraders: for a fresh start, consider running these commands
 
 <a name="TO DO"></a>
 # TO DO
-* add / repair karma tests
+* add / repair karma tests  
+  there is error with component <router-outlet> used in html  
+   Failed: Uncaught (in promise): Error: Template parse errors:  
+   'router-outlet' is not a known element:  
+
 * add bs-config to control browser port and file location
 * display package.json version on the html about page
 * implement build ( gulp)
 * implement deploy (webpack)
 * implement CI
+
+<a name="2.3.0"></a>
+# 2.3.0 (2017-01-17)
+* starting with repair karma tests
+  app.components.spec.ts, test true is true
+  zonejs@0.7.4 needed (not zonejs@0.7.5) ...https://github.com/angular/angular-cli/issues/3975
+
 
 <a name="2.2.0"></a>
 # 2.2.0 (2017-01-17)
