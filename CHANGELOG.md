@@ -18,6 +18,16 @@ Upgraders: for a fresh start, consider running these commands
 * implement deploy (webpack)
 * implement CI
 
+<a name="DOING...NOT WORK YET"></a>
+* tsconfig.json, added outDir, comment // <--- added
+* systemjs.config.js,  app: 'dist', // <--- added
+* index.html, add //System.import('dist/app').catch(function(err){ console.error(err); });
+
+
+<a name="2.0.1"></a>
+# 2.0.1 (2017-01-17)
+* package.json, add ./e2e/**/*.ts for   tslint
+
 
 <a name="2.0.0"></a>
 # 2.0.0 (2017-01-17)
