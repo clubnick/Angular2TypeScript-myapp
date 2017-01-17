@@ -1,6 +1,6 @@
 ## Angular Documentation QuickStart Changelog
 Upgraders: for a fresh start, consider running these commands 
-* `git clean -xdf` 
+* `git clean -xdf` // remove also node modules
 * `npm install`
 * `npm start`
 * `npm run copy2dist` - copy *.html and *.css files into dist dir
