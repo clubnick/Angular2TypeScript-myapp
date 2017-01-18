@@ -24,6 +24,11 @@ Upgraders: for a fresh start, consider running these commands
 * implement deploy (webpack)
 * implement CI
 
+<a name="2.4.1"></a>
+# 2.4.1 (2017-01-18)
+* design text in html
+
+
 <a name="2.4.0"></a>
 # 2.4.0 (2017-01-18)
 * modify (Unit Test) app.component.spec.ts to avoid "router-outlet" exception according to

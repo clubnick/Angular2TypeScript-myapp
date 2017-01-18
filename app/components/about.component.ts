@@ -9,7 +9,7 @@ import { CommentsService} from '../services/comments.service';
   <h2> About This App </h2>
 
   <h2> Angular2TypeScript-myapp </h2>
-  <div> https://github.com/clubnick/Angular2TypeScript-myapp, v1.5.0</div>
+  <div> https://github.com/clubnick/Angular2TypeScript-myapp</div>
   <h4> Angular 2, TypeScript </h4>
 
   <li> conditions *ngFor *ngIf </li>
@@ -17,6 +17,7 @@ import { CommentsService} from '../services/comments.service';
   <li> ngModel binding Services-JsonPlaceHolder </li>
   <li> html templates </li>
   <li> routers </li>
+  <li> test with jasmine, protractor, karma </li>
   
   <p><strong> based on </strong></p>
   <li> Youtube: {{basedon_youtube}} </li>
@@ -56,6 +57,6 @@ export class AboutComponent  {
 
     getComments() {
         this.comment1 = this.commentsService.getComment1();
-        this.comment1 = this.commentsService.getComment2();
+        this.comment2 = this.commentsService.getComment2();
     }
   }
