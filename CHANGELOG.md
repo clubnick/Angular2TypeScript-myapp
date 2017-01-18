@@ -24,6 +24,12 @@ Upgraders: for a fresh start, consider running these commands
 * implement deploy (webpack)
 * implement CI
 
+<a name="2.4.0"></a>
+# 2.4.0 (2017-01-18)
+* modify (Unit Test) app.component.spec.ts to avoid "router-outlet" exception according to
+* https://angular.io/docs/ts/latest/guide/testing.html#!#router-outlet-component
+
+
 <a name="2.3.1"></a>
 # 2.3.1 (2017-01-17)
 * app.component.ts, add import { Router } from '@angular/router';
