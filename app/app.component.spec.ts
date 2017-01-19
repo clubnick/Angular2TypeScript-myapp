@@ -30,7 +30,7 @@ describe('AppComponent', function () {
 
   it('should create component simple syntax', () =>
     expect(comp).toBeDefined()
-  )
+  );
 
   it('should create component comples syntax', () => {
     expect(comp).toBeDefined();

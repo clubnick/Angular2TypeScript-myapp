@@ -24,6 +24,11 @@ Upgraders: for a fresh start, consider running these commands
 * implement deploy (webpack)
 * implement CI
 
+<a name="2.4.2"></a>
+# 2.4.2 (2017-01-19)
+* update src ts according tslink (tslink.json added as configuration parameter into package.json)
+
+
 <a name="2.4.1"></a>
 # 2.4.1 (2017-01-18)
 * design text in html

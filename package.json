@@ -1,12 +1,12 @@
 {
   "name": "angular2typescript-myapp",
-  "version": "2.4.1",
+  "version": "2.4.2",
   "description": "Angular2 TypeScript QuickStart myapp, tests:Karma-Jasmine-Protractor ",
   "scripts": {
     "start": "tsc && concurrently \"tsc -w\"  \"copyfiles app/**/*.html app/**/*.css dist/\"  \"lite-server\" ",
     "copy2dist": "copyfiles app/**/*.html app/**/*.css dist/",
     "e2e": "tsc && concurrently \"http-server -s\" \"protractor protractor.config.js\" --kill-others --success first",
-    "lint": "tslint ./app/**/*.ts ./e2e/**/*.ts -t verbose",
+    "lint": "tslint -c tslint.json ./app/**/*.ts ./e2e/**/*.ts -t verbose",
     "lite": "lite-server",
     "pree2e": "webdriver-manager update",
     "test": "tsc && concurrently \"tsc -w\" \"karma start karma.conf.js\"",
