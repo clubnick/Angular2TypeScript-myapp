@@ -13,10 +13,6 @@ Upgraders: for a fresh start, consider running these commands
 
 <a name="TO DO"></a>
 # TO DO
-* add / repair karma tests  
-  there is error with component <router-outlet> used in html  
-   Failed: Uncaught (in promise): Error: Template parse errors:  
-   'router-outlet' is not a known element:  
 
 * add bs-config to control browser port and file location
 * display package.json version on the html about page
